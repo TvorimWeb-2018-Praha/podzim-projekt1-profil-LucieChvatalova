@@ -13,7 +13,100 @@ html { box-sizing: border-box; }
  twitter    #1da1f2
 */
 
-
 body {
+    max-width: 270px; 
+    /* dovolila jsem si vzhledem k pridani znaku do h1 zvetsit width body a img - 
+    jinak by se mi h1 rozjel na dva radky - zmensovat pismo nebo padding jsem zkousela, ale nevypada to pekne...tak mi snad odpustite :) */
     background-color: #bdc3c7;
+    margin: 0 auto;
+    box-shadow:rgba(0, 0, 0, 0.568) 3px 1px 20px;
+    }
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+   }
+
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.foto {
+    max-width: 270px; 
+}
+
+.profil {
+    background-color: #31363b;
+    margin-top: 1em;
+}
+
+.obsah {
+    padding: 0.9em 1.1em 0.5em 1.1em;
+    color: #bdc3c7;
+}
+
+.logo {
+    border-radius: 180%;
+    background-color: #b92e81;
+    box-shadow: rgba(0, 0, 0, 0.568) 3px 1px 20px;
+    position: absolute;
+    right: 700px;
+    bottom: 560px;
+    /* vím, že mi tam asi chybí rodičovský prvek, moc jsem nevěděla, jak na to, tak jsem to obešla takhle. A taky vidim, proč je to špatně. Když se mi například objeví dolní panel při stahování, ikonka se posune nahoru - jak ji mám teda ukotvit k rodiči? */
+}
+
+ul {
+    background-color:#31363b;
+    text-align: center;
+    }
+  
+li {
+    border: 1px solid #3f464d;
+    display: block;
+    padding: 0.7em;
+    }
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    color: #bdc3c7;
+}
+
+.odkazy{
+    padding: 0;
+}
+
+.odkazy::after{
+    content: '';
+    display: block;
+    clear: both;
+    padding: 0;
+}
+
+a:hover {
+    color: white;
+}
+/* akorát nevím, jak nastavit, aby se při nájezdu kurzoru na políčko barva písma změnila na bílou, i když kurzor nebude přímo na textu */
+.facebook:hover{
+    background-color: #3b5998;
+}
+
+.twitter:hover{
+    background-color: #1da1f2;
+}
+
+.portfolio:hover{
+    background-color: #e74c3c;
+}
+
+.twitter{
+    float: right;
+    width: 50%;
+}
+
+.facebook {
+    float: left;
+    width: 50%;
 }
